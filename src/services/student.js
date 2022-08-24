@@ -10,7 +10,7 @@ class StudentService extends BaseService {
   async getMessage() {
     const [product] = await this.productService_.list({}, { take: 1 })
 
-    return `Welcome to ${product?.title || 'no product'}!`
+    return `This is student service`
   }
 }
 
